@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/edit_design"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Home">
+
+    <!-- Toolbar -->
+
+    <!-- Title: Home Activity -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:elevation="4dp"
+        app:title="ALBRANDZ TECHNOLOGY"
+        app:titleTextColor="@android:color/white">
+
+        <!-- Logout Icon -->
+        <ImageView
+            android:id="@+id/logoutIcon"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_gravity="end"
+            android:layout_marginEnd="16dp"
+            android:src="@drawable/ic_logout" />
+    </androidx.appcompat.widget.Toolbar>
+
+    <!-- TextView: WELCOME, PLEASE SELECT -->
+    <TextView
+        android:id="@+id/textViewHomeTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="WELCOME, PLEASE SELECT"
+        android:textColor="#000000"
+        android:textSize="28sp" />
+
+    <!-- Button for Google Maps -->
+    <Button
+        android:id="@+id/btnGoogleMaps"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewHomeTitle"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="20dp"
+        android:background="#4285F4"
+        android:text="Google Maps"
+        android:textColor="#212121" />
+
+    <!-- Button for SQLite Database -->
+    <Button
+        android:id="@+id/btnSQLiteDatabase"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnGoogleMaps"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="20dp"
+        android:background="#34A853"
+        android:text="SQLite Database"
+        android:textColor="#3E2723" />
+
+    <!-- Button for Firebase Data -->
+
+
+</RelativeLayout>

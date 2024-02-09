@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar" tools:ignore="DuplicateDefinition">
+        <!-- Your other style attributes here -->
+
+        <!-- Add the AppBarOverlay style -->
+        <item name="colorPrimaryDark">@color/colorprimarydark</item>
+        <item name="colorAccent">@color/coloraccent</item>
+        <item name="colorPrimary">@color/colorprimary</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <!-- Your other style attributes here -->
+
+        <!-- Add the PopupOverlay style -->
+        <item name="android:popupMenuStyle">@style/PopupMenu</item>
+        <item name="android:dropDownListViewStyle">@style/DropDownListView</item>
+        <item name="android:actionDropDownStyle">@style/DropDownNav</item>
+        <item name="android:galleryItemBackground">@drawable/selectable_background_apptheme</item>
+        <item name="android:popupBackground">@color/colorprimary</item>
+        <item name="android:dropDownSelector">@drawable/selectable_background_apptheme</item>
+    </style>
+
+    <style name="PopupMenu" parent="Widget.AppCompat.PopupMenu">
+        <item name="android:popupBackground">@color/colorprimary</item>
+    </style>
+
+    <style name="DropDownListView" parent="AppTheme">
+        <item name="android:listViewStyle">@style/DropDownNav</item>
+    </style>
+
+    <style name="DropDownNav" parent="Widget.AppCompat.ListView.DropDown">
+        <item name="android:background">@color/colorprimary</item>
+
+        <!-- Your other style attributes here -->
+
+        <!-- Add the AppBarOverlay style -->
+        <item name="colorPrimaryDark">@color/colorprimarydark</item>
+        <item name="colorAccent">@color/coloraccent</item>
+        <item name="colorPrimary">@color/colorprimary</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+    </style>
+
+
+
+</resources>

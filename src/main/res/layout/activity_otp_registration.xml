@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:background="@drawable/edit_design"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context=".OTP_Registration">
+
+    <!-- Title: Registration -->
+    <TextView
+        android:id="@+id/textViewRegistrationTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Firebase Registration"
+        android:textStyle="bold"
+        android:textSize="28sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"/>
+
+    <!-- Edit Text for Name -->
+    <!-- Other EditText fields above... -->
+
+    <!-- Edit Text for Phone Number -->
+    <EditText
+        android:id="@+id/editTextPhoneNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Phone Number (with country code)"
+        android:textStyle="bold"
+        android:inputType="phone"
+        android:textSize="16sp"
+        android:minHeight="48dp"
+        android:layout_below="@id/textViewRegistrationTitle"
+        android:layout_marginTop="20dp"/>
+
+    <!-- Button to Send OTP -->
+    <Button
+        android:id="@+id/btnSendOTP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Send OTP"
+        android:layout_below="@id/editTextPhoneNumber"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"/>
+
+    <!-- OTP Section -->
+    <!-- Edit Text for OTP -->
+    <EditText
+        android:id="@+id/editTextOTP"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter OTP"
+        android:textStyle="bold"
+        android:inputType="number"
+        android:textSize="16sp"
+        android:minHeight="48dp"
+        android:layout_below="@id/btnSendOTP"
+        android:layout_marginTop="20dp" />
+
+    <!-- Button to Verify OTP -->
+    <Button
+        android:id="@+id/btnVerifyOTP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Verify OTP"
+        android:layout_below="@id/editTextOTP"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"/>
+
+    <!-- Progress Bar -->
+    <ProgressBar
+        android:id="@+id/progressBarResend"
+        style="?android:attr/progressBarStyleSmall"
+        android:outlineAmbientShadowColor="@color/black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        android:layout_below="@id/btnVerifyOTP"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"/>
+
+</RelativeLayout>

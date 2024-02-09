@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="radioButtonPDF" type="id" />
+    <item name="textViewUserPhoneNumber" type="id" />
+    <item name="mapView" type="id" />
+</resources>
